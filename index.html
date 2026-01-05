@@ -20,9 +20,10 @@
     
     <!-- PRECARREGAMENTO DAS IMAGENS DOS BOTÕES -->
     <link rel="preload" as="image" href="https://z-cdn-media.chatglm.cn/files/d65509b7-0085-4f22-be03-f51bdfa1a6ad.png?auth_key=1866884520-85c7eb61393c4e0093bcebfdac4060e0-0-ee9c0be3582406b29daac9aba6fbf58e">
+    <!-- ATUALIZADO: Preload da imagem do botão de Forex (agora em 2º lugar) -->
+    <link rel="preload" as="image" href="https://z-cdn-media.chatglm.cn/files/ff476a6a-39f3-49b9-b068-ab96ffd9ede3.png?auth_key=1867598707-edebd8b71aaf4dabb39ca93103655815-0-fff375934c9ba5416732bf43eefd90d2">
     <link rel="preload" as="image" href="https://z-cdn-media.chatglm.cn/files/bb0f955b-849d-4268-a443-796058ea9415.png?auth_key=1866884520-d38de301d3ef4b2ca4e143bc822b2527-0-1a4e4b1743e55c729d94169369beb6a5">
     <link rel="preload" as="image" href="https://z-cdn-media.chatglm.cn/files/5bdb47e9-1de6-4326-89a5-d9475bf1243f.png?auth_key=1866884520-46998c44b05643a4a4e70779fde4ebfb-0-b8685cbe135257e3acc1071a5208c2ce">
-    <link rel="preload" as="image" href="https://z-cdn-media.chatglm.cn/files/a64b5c2c-1912-41be-aa6d-ff80c4c6c725.png?auth_key=1866884520-cc2bd6d49b334288a03649e76d4f7d39-0-63b94d956f4ee94e91dffb6847b1c962">
     
     <!-- PRECARREGAMENTO E LINK DO SEU FAVICON (LOGO) -->
     <link rel="preload" as="image" href="https://z-cdn-media.chatglm.cn/files/a6c02978-c44b-4d50-8095-89cd1f71b9db.png?auth_key=1866885543-174666fd64e4449494836ecd652a6288-0-fa3499babbe908f24df4ba4c0948cf03">
@@ -240,6 +241,7 @@
             animation: fadeInUp 0.5s ease-out forwards;
         }
 
+        /* ATUALIZADO: Animações reajustadas para a nova ordem de 4 botões */
         .links-container li:nth-child(1) { animation-delay: 0.1s; }
         .links-container li:nth-child(2) { animation-delay: 0.2s; }
         .links-container li:nth-child(3) { animation-delay: 0.3s; }
@@ -279,7 +281,20 @@
                         </a>
                     </li>
 
-                    <!-- BOTÃO 2: CORRETORA -->
+                    <!-- BOTÃO 2: CADASTRO FOREX (MOVIDO PARA CÁ) -->
+                    <li>
+                        <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" 
+                           target="_blank" 
+                           class="link-button" 
+                           rel="noopener noreferrer" 
+                           aria-label="Cadastre-se na corretora Forex (abre em nova aba)">
+                            <img src="https://z-cdn-media.chatglm.cn/files/ff476a6a-39f3-49b9-b068-ab96ffd9ede3.png?auth_key=1867598707-edebd8b71aaf4dabb39ca93103655815-0-fff375934c9ba5416732bf43eefd90d2" 
+                                 alt="Imagem de propaganda para Forex, com uma pessoa, iate e o mar, e o texto 'Cadastro na corretora'"
+                                 loading="lazy">
+                        </a>
+                    </li>
+
+                    <!-- BOTÃO 3: CORRETORA -->
                     <li>
                         <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" 
                            target="_blank" 
@@ -292,7 +307,7 @@
                         </a>
                     </li>
 
-                    <!-- BOTÃO 3: GRUPO DA LIVE -->
+                    <!-- BOTÃO 4: GRUPO DA LIVE -->
                     <li>
                         <a href="https://chat.whatsapp.com/BqocKGrw95I5WWdfJXrdAg" 
                            target="_blank" 
@@ -301,19 +316,6 @@
                            aria-label="Acesse o nosso grupo da live (abre em nova aba)">
                             <img src="https://z-cdn-media.chatglm.cn/files/5bdb47e9-1de6-4326-89a5-d9475bf1243f.png?auth_key=1866884520-46998c44b05643a4a4e70779fde4ebfb-0-b8685cbe135257e3acc1071a5208c2ce" 
                                  alt="Imagem do botão para o grupo da live, com o texto GRUPO DA LIVE"
-                                 loading="lazy">
-                        </a>
-                    </li>
-
-                    <!-- BOTÃO 4: FERRAMENTA I.A. -->
-                    <li>
-                        <a href="https://traderinteligenteai.site/" 
-                           target="_blank" 
-                           class="link-button" 
-                           rel="noopener noreferrer" 
-                           aria-label="Conheça a nossa ferramenta de Inteligência Artificial (abre em nova aba)">
-                            <img src="https://z-cdn-media.chatglm.cn/files/a64b5c2c-1912-41be-aa6d-ff80c4c6c725.png?auth_key=1866884520-cc2bd6d49b334288a03649e76d4f7d39-0-63b94d956f4ee94e91dffb6847b1c962" 
-                                 alt="Imagem do botão da ferramenta de I.A., com o texto Ferramenta I.A"
                                  loading="lazy">
                         </a>
                     </li>
